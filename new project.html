@@ -3,468 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Liore - Elegant Anti-Tarnish Jewelry from Jaipur, India. Beautiful rings, necklaces, earrings, and bracelets starting from ₹150. Order via WhatsApp or Instagram DM.">
-    <meta name="keywords" content="Liore jewelry, anti-tarnish jewelry, Jaipur jewelry, gold jewelry, silver jewelry, rings, necklaces, earrings, bracelets, online jewelry shopping, Liore jewels">
-    <meta name="author" content="Liore">
-    <meta name="robots" content="index, follow">
-    <title>Liore - Elegant Anti-Tarnish Jewelry | Buy Online</title>
-    
-    <!-- Open Graph for Social Media -->
-    <meta property="og:title" content="Liore - Elegant Jewelry @lioree.jewels">
-    <meta property="og:description" content="Beautiful anti-tarnish jewelry - Rings, Necklaces, Earrings & Bracelets. Starting ₹150. Order via WhatsApp or Instagram!">
-    <meta property="og:instagram" content="@lioree.jewels">
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Georgia', serif;
-        }
-
-        body {
-            background-color: #FDFBF7;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        /* Header */
-        header {
-            background: white;
-            padding: 20px 5%;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 28px;
-            font-weight: bold;
-            color: #D4AF37;
-            text-decoration: none;
-            letter-spacing: 3px;
-        }
-
-        nav {
-            display: flex;
-            gap: 20px;
-        }
-
-        nav a {
-            color: #333;
-            text-decoration: none;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        nav a:hover {
-            color: #D4AF37;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1200');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            margin-top: 60px;
-        }
-
-        .hero-content h1 {
-            font-size: 60px;
-            letter-spacing: 8px;
-            margin-bottom: 15px;
-            color: #D4AF37;
-        }
-
-        .hero-content h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            font-weight: normal;
-        }
-
-        .hero-content p {
-            font-size: 18px;
-            margin-bottom: 30px;
-            letter-spacing: 2px;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 15px 40px;
-            background: #D4AF37;
-            color: white;
-            text-decoration: none;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: 0.3s;
-            margin: 5px;
-        }
-
-        .cta-button:hover {
-            background: #B76E79;
-        }
-
-        /* About Section */
-        .about {
-            padding: 80px 10%;
-            text-align: center;
-            background: white;
-        }
-
-        .about h2 {
-            font-size: 36px;
-            color: #D4AF37;
-            margin-bottom: 20px;
-            letter-spacing: 3px;
-        }
-
-        .about p {
-            max-width: 700px;
-            margin: 0 auto;
-            color: #666;
-        }
-
-        .location-badge {
-            display: inline-block;
-            background: #D4AF37;
-            color: white;
-            padding: 8px 20px;
-            margin-top: 20px;
-            font-size: 14px;
-        }
-
-        /* Collections */
-        .collections {
-            padding: 80px 10%;
-            background: #FDFBF7;
-        }
-
-        .collections h2 {
-            text-align: center;
-            font-size: 36px;
-            color: #D4AF37;
-            margin-bottom: 50px;
-            letter-spacing: 3px;
-        }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-
-        .product-card {
-            background: white;
-            padding: 20px;
-            text-align: center;
-            transition: 0.3s;
-            border: 1px solid #eee;
-        }
-
-        .product-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .product-image {
-            width: 100%;
-            height: 200px;
-            background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 50px;
-        }
-
-        .product-card h3 {
-            color: #333;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-        }
-
-        .product-card .price {
-            color: #B76E79;
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .product-card .order-btn {
-            display: inline-block;
-            padding: 10px 25px;
-            background: #D4AF37;
-            color: white;
-            text-decoration: none;
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .product-card .order-btn:hover {
-            background: #B76E79;
-        }
-
-        /* How to Order */
-        .how-to-order {
-            padding: 80px 10%;
-            background: #D4AF37;
-            text-align: center;
-            color: white;
-        }
-
-        .how-to-order h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            letter-spacing: 3px;
-        }
-
-        .how-to-order p {
-            margin-bottom: 40px;
-        }
-
-        .order-options {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
-
-        .order-option {
-            background: white;
-            color: #333;
-            padding: 40px;
-            width: 300px;
-            text-align: center;
-        }
-
-        .order-option h3 {
-            color: #D4AF37;
-            margin-bottom: 20px;
-            font-size: 20px;
-        }
-
-        .order-option p {
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        .whatsapp-btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background: #25D366;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-        }
-
-        .instagram-btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background: #E1306C;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-        }
-
-        /* Contact */
-        .contact {
-            padding: 80px 10%;
-            text-align: center;
-            background: white;
-        }
-
-        .contact h2 {
-            font-size: 36px;
-            color: #D4AF37;
-            margin-bottom: 30px;
-            letter-spacing: 3px;
-        }
-
-        .instagram-link {
-            color: #E1306C;
-            font-size: 24px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* Footer */
-        footer {
-            background: #333;
-            color: white;
-            padding: 30px;
-            text-align: center;
-        }
-
-        footer p {
-            font-size: 14px;
-        }
-
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .hero-content h1 {
-                font-size: 36px;
-            }
-            
-            nav {
-                display: none;
-            }
-            
-            .order-options {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .order-option {
-                width: 100%;
-            }
-        }
-
-        /* SEO JSON-LD */
-    </style>
-    
-    <!-- JSON-LD Schema for Local Business -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "JewelryStore",
-        "name": "Liore",
-        "description": "Elegant anti-tarnish jewelry - Rings, Necklaces, Earrings & Bracelets",
-        "url": "https://liorejewels.com",
-        "telephone": "+919509569785",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Jaipur",
-            "addressRegion": "Rajasthan",
-            "addressCountry": "IN"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "26.9124",
-            "longitude": "75.7873"
-        },
-        "openingHours": "Mo-Su 09:00-21:00",
-        "image": "https://liorejewels.com/images/logo.jpg",
-        "priceRange": "₹150 - ₹500"
-    }
-    </script>
+    <title>Liore Jewels - Elegant Jewelry</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <a href="#" class="logo">LIORE</a>
+        <div class="logo">Liore Jewels</div>
         <nav>
+            <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#collections">Collections</a>
-            <a href="#order">Order</a>
+            <a href="#products">Products</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>LIORE</h1>
-            <h2>Elegant Anti-Tarnish Jewelry</h2>
-            <p>Handcrafted Jewelry from Jaipur, India</p>
-            <p>Starting from ₹150</p>
-            <a href="#collections" class="cta-button">View Collections</a>
-            <a href="#order" class="cta-button">Order Now</a>
-        </div>
+    <section id="home" class="hero">
+        <h1>Liore Jewels</h1>
+        <p>Elegant Jewelry for Every Occasion</p>
+        <a href="#products" class="btn">View Collection</a>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <h2>About Liore</h2>
-        <p>Liore brings you exquisite handcrafted anti-tarnish jewelry made with love and precision. Each piece is designed to make you feel special and elegant. Based in Jaipur, India, we create unique jewelry pieces that blend traditional craftsmanship with modern aesthetics.</p>
-        <p>Our jewelry is designed to last - anti-tarnish coating ensures your pieces shine for years!</p>
-        <div class="location-badge">📍 Based in Jaipur, India</div>
+        <h2>About Liore Jewels</h2>
+        <p>Welcome to Liore Jewels - your destination for elegant and timeless jewelry pieces.</p>
+        <p>Follow us on Instagram: @liore.jwels</p>
     </section>
 
-    <!-- Collections -->
-    <section id="collections" class="collections">
-        <h2>Our Collections</h2>
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2>Our Collection</h2>
         <div class="product-grid">
-            <!-- Rings -->
             <div class="product-card">
-                <div class="product-image">💍</div>
-                <h3>Elegant Rings</h3>
-                <p class="price">₹150 - ₹500</p>
-                <a href="#order" class="order-btn">Order Now</a>
+                <div class="product-image">📷 Photo 1</div>
+                <h3>Product Name</h3>
+                <p>Price: Rs. ---</p>
             </div>
-            
-            <!-- Necklaces -->
             <div class="product-card">
-                <div class="product-image">📿</div>
-                <h3>Beautiful Necklaces</h3>
-                <p class="price">₹150 - ₹500</p>
-                <a href="#order" class="order-btn">Order Now</a>
+                <div class="product-image">📷 Photo 2</div>
+                <h3>Product Name</h3>
+                <p>Price: Rs. ---</p>
             </div>
-            
-            <!-- Earrings -->
             <div class="product-card">
-                <div class="product-image">👂</div>
-                <h3>Stylish Earrings</h3>
-                <p class="price">₹150 - ₹500</p>
-                <a href="#order" class="order-btn">Order Now</a>
+                <div class="product-image">📷 Photo 3</div>
+                <h3>Product Name</h3>
+                <p>Price: Rs. ---</p>
             </div>
-            
-            <!-- Bracelets -->
             <div class="product-card">
-                <div class="product-image">💫</div>
-                <h3>Graceful Bracelets</h3>
-                <p class="price">₹150 - ₹500</p>
-                <a href="#order" class="order-btn">Order Now</a>
+                <div class="product-image">📷 Photo 4</div>
+                <h3>Product Name</h3>
+                <p>Price: Rs. ---</p>
             </div>
         </div>
     </section>
 
-    <!-- How to Order -->
-    <section id="order" class="how-to-order">
-        <h2>How to Order</h2>
-        <p>Choose your preferred way to order - WhatsApp or Instagram DM!</p>
-        <div class="order-options">
-            <div class="order-option">
-                <h3>📱 Order via WhatsApp</h3>
-                <p>Message us your selected product and we will confirm your order within minutes.</p>
-                <a href="https://wa.me/919509569785" class="whatsapp-btn">WhatsApp Us</a>
-            </div>
-            
-            <div class="order-option">
-                <h3>📸 Order via Instagram</h3>
-                <p>DM us @lioree.jewels with your order or comment on our posts.</p>
-                <a href="https://instagram.com/lioree.jewels" target="_blank" class="instagram-btn">Instagram DM</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
-        <p>Follow us on Instagram: <a href="https://instagram.com/lioree.jewels" class="instagram-link" target="_blank">@lioree.jewels</a></p>
-        <p>Order via WhatsApp: +91 9509569785</p>
-        <p>📍 Jaipur, India</p>
+        <p>📱 Instagram: @liore.jwels</p>
+        <p>📧 Email: liorejewels@gmail.com</p>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Liore Jewelry. All Rights Reserved.</p>
-        <p>📸 Follow us on Instagram: @lioree.jewels</p>
+        <p>&copy; 2024 Liore Jewels. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
