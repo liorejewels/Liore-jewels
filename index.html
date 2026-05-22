@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liore | Handcrafted Jewellery</title>
     <style>
-        /* MEJURI & AURATE STYLE - Clean & Minimal */
+        /* MEJURI & AURATE STYLE - Beautiful Colors */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Lato:wght@300;400&display=swap');
+        
         * {
             margin: 0;
             padding: 0;
@@ -13,243 +15,276 @@
         }
 
         body {
-            font-family: 'Cormorant Garamond', 'Georgia', serif;
-            background-color: #ffffff;
-            color: #1a1a1a;
-            line-height: 1.6;
+            font-family: 'Playfair Display', serif;
+            background-color: #fdf8f5;
+            color: #3d3d3d;
+            line-height: 1.7;
         }
 
         /* HEADER */
         header {
             background: #ffffff;
-            padding: 25px 50px;
+            padding: 22px 50px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             position: sticky;
             top: 0;
             z-index: 100;
-            border-bottom: 1px solid #f5f5f5;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.03);
         }
 
         .logo {
-            font-size: 22px;
-            font-weight: 600;
-            letter-spacing: 6px;
+            font-size: 26px;
+            font-weight: 500;
+            letter-spacing: 7px;
             text-transform: uppercase;
-            color: #1a1a1a;
+            color: #2d2d2d;
         }
 
         nav ul {
             display: flex;
             list-style: none;
-            gap: 35px;
+            gap: 32px;
         }
 
         nav a {
             text-decoration: none;
-            color: #666666;
-            font-size: 12px;
+            color: #8a7f75;
+            font-size: 11px;
             letter-spacing: 2px;
             text-transform: uppercase;
+            font-family: 'Lato', sans-serif;
             transition: color 0.3s;
         }
 
         nav a:hover {
-            color: #1a1a1a;
+            color: #c9a962;
         }
 
         /* HERO SECTION */
         .hero {
             text-align: center;
-            padding: 120px 20px;
-            background: #fafafa;
+            padding: 110px 20px;
+            background: linear-gradient(to bottom, #ffffff, #fdf8f5);
         }
 
         .hero h1 {
-            font-size: 42px;
-            font-weight: 300;
-            margin-bottom: 20px;
-            letter-spacing: 8px;
+            font-size: 48px;
+            font-weight: 400;
+            margin-bottom: 18px;
+            letter-spacing: 12px;
             text-transform: uppercase;
+            color: #2d2d2d;
         }
 
         .hero p {
-            color: #888888;
-            font-size: 14px;
-            margin-bottom: 35px;
-            letter-spacing: 2px;
+            color: #a39385;
+            font-size: 13px;
+            margin-bottom: 38px;
+            letter-spacing: 4px;
+            font-family: 'Lato', sans-serif;
         }
 
         .btn {
             display: inline-block;
-            padding: 16px 40px;
-            background: #1a1a1a;
+            padding: 18px 45px;
+            background: linear-gradient(135deg, #c9a962 0%, #d4b76a 100%);
             color: #ffffff;
             text-decoration: none;
             font-size: 11px;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             text-transform: uppercase;
+            font-family: 'Lato', sans-serif;
             transition: all 0.3s;
+            border: none;
+            cursor: pointer;
         }
 
         .btn:hover {
-            background: #333333;
+            background: linear-gradient(135deg, #b8954a 0%, #c9a962 100%);
+            transform: translateY(-2px);
         }
 
         /* CATEGORIES GRID */
         .categories {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 1px;
-            background: #f0f0f0;
-            border: 1px solid #f0f0f0;
+            gap: 20px;
+            padding: 30px 50px;
+            background: #fdf8f5;
         }
 
         .cat-card {
             background: #ffffff;
-            padding: 60px 20px;
+            padding: 50px 20px;
             text-align: center;
             cursor: pointer;
-            transition: background 0.3s;
+            transition: all 0.3s;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.04);
         }
 
         .cat-card:hover {
-            background: #fafafa;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
         }
 
         .cat-icon {
-            font-size: 32px;
-            margin-bottom: 20px;
+            font-size: 26px;
+            margin-bottom: 18px;
+            color: #c9a962;
         }
 
         .cat-card h3 {
-            font-size: 12px;
+            font-size: 11px;
             letter-spacing: 3px;
             font-weight: 500;
             text-transform: uppercase;
-            color: #1a1a1a;
+            color: #4a4540;
+            font-family: 'Lato', sans-serif;
         }
 
         /* PRODUCTS SECTION */
         .products {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 80px 40px;
+            padding: 70px 30px 100px;
+            background: #fdf8f5;
         }
 
         .section-title {
             text-align: center;
-            font-size: 13px;
-            letter-spacing: 4px;
-            margin-bottom: 60px;
+            font-size: 12px;
+            letter-spacing: 5px;
+            margin-bottom: 70px;
             text-transform: uppercase;
-            color: #888888;
+            color: #a39385;
+            font-family: 'Lato', sans-serif;
         }
 
         .category-title {
             text-align: center;
-            font-size: 24px;
-            font-weight: 300;
-            margin-bottom: 40px;
-            margin-top: 30px;
-            letter-spacing: 4px;
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 45px;
+            margin-top: 25px;
+            letter-spacing: 5px;
+            color: #3d3d3d;
         }
 
         .product-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
+            gap: 35px;
         }
 
         .product-card {
             background: #ffffff;
+            padding: 25px;
             text-align: center;
+            transition: all 0.3s;
+            box-shadow: 0 3px 20px rgba(0,0,0,0.04);
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
         }
 
         .product-img {
             width: 100%;
-            height: 300px;
-            background: #f8f8f8;
-            margin-bottom: 25px;
+            height: 260px;
+            background: #f9f5f0;
+            margin-bottom: 22px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 60px;
-            color: #d4d4d4;
+            font-size: 50px;
+            color: #d4c9b8;
         }
 
         .product-card h3 {
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 500;
             margin-bottom: 8px;
             letter-spacing: 1px;
+            color: #3d3d3d;
         }
 
         .product-card .price {
-            font-size: 15px;
-            color: #666666;
-            margin-bottom: 20px;
+            font-size: 14px;
+            color: #c9a962;
+            margin-bottom: 22px;
+            font-weight: 500;
         }
 
         .whatsapp-btn {
             display: inline-block;
-            padding: 14px 30px;
+            padding: 14px 32px;
             background: #25D366;
             color: #ffffff;
             text-decoration: none;
             font-size: 11px;
             letter-spacing: 1px;
             text-transform: uppercase;
-            transition: background 0.3s;
+            font-family: 'Lato', sans-serif;
+            transition: all 0.3s;
         }
 
         .whatsapp-btn:hover {
-            background: #128C7E;
+            background: #1da851;
+            transform: translateY(-2px);
         }
 
         /* FOOTER */
         footer {
-            background: #1a1a1a;
+            background: #2d2d2d;
             color: #ffffff;
             text-align: center;
-            padding: 60px 20px;
+            padding: 55px 20px;
         }
 
         footer a {
             color: #c9a962;
             text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #ffffff;
         }
 
         footer p {
             margin-bottom: 12px;
-            font-size: 13px;
+            font-size: 12px;
             letter-spacing: 1px;
+            font-family: 'Lato', sans-serif;
         }
 
         /* MOBILE */
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
-                gap: 20px;
+                gap: 18px;
                 padding: 20px;
             }
             .categories {
                 grid-template-columns: repeat(2, 1fr);
+                padding: 20px;
             }
             .product-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 20px;
             }
             .hero h1 {
-                font-size: 28px;
-                letter-spacing: 4px;
+                font-size: 26px;
+                letter-spacing: 5px;
             }
             .hero {
                 padding: 80px 20px;
             }
             nav ul {
-                gap: 20px;
+                gap: 18px;
             }
         }
     </style>
@@ -281,19 +316,19 @@
     <!-- CATEGORIES -->
     <section class="categories">
         <div class="cat-card" onclick="scrollTo('earrings')">
-            <div class="cat-icon">✦</div>
+            <div class="cat-icon">✧</div>
             <h3>Earrings</h3>
         </div>
         <div class="cat-card" onclick="scrollTo('bracelets')">
-            <div class="cat-icon">✦</div>
+            <div class="cat-icon">✧</div>
             <h3>Bracelets</h3>
         </div>
         <div class="cat-card" onclick="scrollTo('necklaces')">
-            <div class="cat-icon">✦</div>
+            <div class="cat-icon">✧</div>
             <h3>Necklaces</h3>
         </div>
         <div class="cat-card" onclick="scrollTo('rings')">
-            <div class="cat-icon">✦</div>
+            <div class="cat-icon">✧</div>
             <h3>Rings</h3>
         </div>
     </section>
@@ -308,19 +343,19 @@
             <h3 class="category-title">Earrings</h3>
             <div class="product-grid">
                 <div class="product-card">
-                    <div class="product-img">✦</div>
+                    <div class="product-img">✧</div>
                     <h3>Gold Studs</h3>
                     <p class="price">₹1,499</p>
                     <a href="https://wa.me/919509569785?text=Hi Liore! I'm interested in Gold Studs" class="whatsapp-btn">Order on WhatsApp</a>
                 </div>
                 <div class="product-card">
-                    <div class="product-img">✦</div>
+                    <div class="product-img">✧</div>
                     <h3>Hoop Earrings</h3>
                     <p class="price">₹2,299</p>
                     <a href="https://wa.me/919509569785?text=Hi Liore! I'm interested in Hoop Earrings" class="whatsapp-btn">Order on WhatsApp</a>
                 </div>
                 <div class="product-card">
-                    <div class="product-img">✦</div>
+                    <div class="product-img">✧</div>
                     <h3>Dangle Earrings</h3>
                     <p class="price">₹2,999</p>
                     <a href="https://wa.me/919509569785?text=Hi Liore! I'm interested in Dangle Earrings" class="whatsapp-btn">Order on WhatsApp</a>
@@ -333,19 +368,19 @@
             <h3 class="category-title">Bracelets</h3>
             <div class="product-grid">
                 <div class="product-card">
-                    <div class="product-img">✦</div>
+                    <div class="product-img">✧</div>
                     <h3>Cuff Bracelet</h3>
                     <p class="price">₹1,999</p>
                     <a href="https://wa.me/919509569785?text=Hi Liore! I'm interested in Cuff Bracelet" class="whatsapp-btn">Order on WhatsApp</a>
                 </div>
                 <div class="product-card">
-                    <div class="product-img">✦</div>
+                    <div class="product-img">✧</div>
                     <h3>Chain Bracelet</h3>
                     <p class="price">₹2,499</p>
                     <a href="https://wa.me/919509569785?text=Hi Liore! I'm interested in Chain Bracelet" class="whatsapp-btn">Order on WhatsApp</a>
                 </div>
                 <div class="product-card">
-                    <div class="product-img">✦</div>
+                    <div class="product-img">✧</div>
                     <h3>Bangle Set</h3>
                     <p class="price">₹3,499</p>
                     <a href="https://wa.me/919509569785?text=Hi Liore! I'm interested in Bangle Set" class="whatsapp-btn">Order on WhatsApp</a>
@@ -358,19 +393,19 @@
             <h3 class="category-title">Necklaces</h3>
             <div class="product-grid">
                 <div class="product-card">
-                    <div class="product-img">✦</div>
+                    <div class="product-img">✧</div>
                     <h3>Gold Chain</h3>
                     <p class="price">₹2,499</p>
                     <a href="https://wa.me/919509569785?text=Hi Liore! I'm interested in Gold Chain" class="whatsapp-btn">Order on WhatsApp</a>
                 </div>
                 <div class="product-card">
-                    <div class="product-img">✦</div>
+                    <div class="product-img">✧</div>
                     <h3>Pendant Necklace</h3>
                     <p class="price">₹4,999</p>
                     <a href="https://wa.me/919509569785?text=Hi Liore! I'm interested in Pendant Necklace" class="whatsapp-btn">Order on WhatsApp</a>
                 </div>
                 <div class="product-card">
-                    <div class="product-img">✦</div>
+                    <div class="product-img">✧</div>
                     <h3>Pearl Necklace</h3>
                     <p class="price">₹3,499</p>
                     <a href="https://wa.me/919509569785?text=Hi Liore! I'm interested in Pearl Necklace" class="whatsapp-btn">Order on WhatsApp</a>
@@ -383,19 +418,19 @@
             <h3 class="category-title">Rings</h3>
             <div class="product-grid">
                 <div class="product-card">
-                    <div class="product-img">✦</div>
+                    <div class="product-img">✧</div>
                     <h3>Gold Band</h3>
                     <p class="price">₹2,999</p>
                     <a href="https://wa.me/919509569785?text=Hi Liore! I'm interested in Gold Band" class="whatsapp-btn">Order on WhatsApp</a>
                 </div>
                 <div class="product-card">
-                    <div class="product-img">✦</div>
+                    <div class="product-img">✧</div>
                     <h3>Stone Ring</h3>
                     <p class="price">₹3,999</p>
                     <a href="https://wa.me/919509569785?text=Hi Liore! I'm interested in Stone Ring" class="whatsapp-btn">Order on WhatsApp</a>
                 </div>
                 <div class="product-card">
-                    <div class="product-img">✦</div>
+                    <div class="product-img">✧</div>
                     <h3>Couple Ring Set</h3>
                     <p class="price">₹5,999</p>
                     <a href="https://wa.me/919509569785?text=Hi Liore! I'm interested in Couple Ring Set" class="whatsapp-btn">Order on WhatsApp</a>
