@@ -1,60 +1,3 @@
-<think>
-The user is saying that the first code I gave actually worked, but they have these issues:
-1. They wanted photos but I used emojis
-2. No live background
-3. Brand name not showing at top
-4. No design
-
-Let me understand - the first code (the one with video background) actually worked! But they want:
-1. Real photos instead of emojis
-2. Live video background (I tried but it didn't work earlier)
-3. Brand name at top (should be there though)
-4. Better design
-
-So I need to:
-1. Keep the first code structure that worked
-2. Add a working video background (need to find a reliable video source)
-3. The brand name "LIORE JEWELS" should be in the header - maybe it wasn't showing properly
-4. Better aesthetics like Mejuri
-
-Let me recreate the website with:
-- Working video background from a reliable source
-- Real jewelry placeholder images (I'll use free stock images or create placeholder image URLs)
-- Beautiful design like Mejuri
-- The brand name prominently displayed
-
-For images, since they don't have their own photos yet, I can use placeholder images from services like:
-- picsum.photos
-- Or I can use colored placeholders with text
-
-For video, I'll try to find a working video URL or use a CSS animation that looks like sparkles/shining effect.
-
-Let me create a better version with:
-1. Background video that actually works (I'll use a reliable CDN video or create animated gradient)
-2. Better placeholders for products (maybe use actual image URLs or nice colored placeholders)
-3. Beautiful modern design like Mejuri
-
-Let me check - the first code I gave had the video but it might not have loaded. Let me use a more reliable approach - maybe use an animated gradient background or find a video that works.
-
-Actually, let me try using a video from a more reliable source, or create a beautiful animated CSS background that looks like sparkles.
-
-For the product images, since they don't have their own photos, I'll use placeholder image services or just keep the elegant design with better looking placeholders.
-</think>
-
-Ah sorry! Now I understand - the **first code worked** but you want:
-
-1. ✅ **Real photos** instead of emojis (when you have your photos)
-2. ✅ **Live video background** (working one)
-3. ✅ **Brand name at top** (LIORE JEWELS)
-4. ✅ **Better design** like Mejuri
-
-Let me create the **perfect version** now!
-
----
-
-## **New Better Code with Video Background:**
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,451 +5,335 @@ Let me create the **perfect version** now!
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liore Jewels | Premium Jewelry</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-        }
-
-        body {
-            color: #333;
-            overflow-x: hidden;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; color: #333; }
+        
         /* VIDEO BACKGROUND */
-        .video-container {
+        .bg-video {
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            overflow: hidden;
-        }
-
-        .video-container video {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            filter: brightness(0.5) contrast(1.1);
-        }
-
-        .video-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%);
             z-index: -1;
+            filter: brightness(0.3);
         }
-
+        
         /* HEADER */
         header {
-            position: relative;
             text-align: center;
-            padding: 120px 20px 80px;
+            padding: 100px 20px;
             color: white;
         }
-
-        .logo {
-            font-size: 64px;
-            font-weight: 100;
-            letter-spacing: 12px;
-            margin-bottom: 15px;
-            text-transform: uppercase;
+        
+        .brand-name {
+            font-size: 60px;
+            font-weight: bold;
+            letter-spacing: 10px;
+            margin-bottom: 10px;
         }
-
+        
         .tagline {
-            font-size: 14px;
-            letter-spacing: 4px;
-            text-transform: uppercase;
+            font-size: 16px;
             opacity: 0.9;
         }
-
-        /* NAVIGATION */
+        
+        /* NAV */
         nav {
-            background: rgba(255,255,255,0.95);
-            padding: 20px 0;
+            background: white;
+            padding: 15px;
+            text-align: center;
             position: sticky;
             top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
         }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
-
+        
         nav a {
             color: #333;
             text-decoration: none;
-            font-size: 13px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-weight: 500;
-            transition: 0.3s;
-            padding: 8px 0;
-            border-bottom: 2px solid transparent;
+            margin: 20px;
+            font-size: 14px;
+            font-weight: bold;
         }
-
-        nav a:hover {
-            color: #b8860b;
-            border-bottom: 2px solid #b8860b;
-        }
-
-        /* PRICE BANNER */
-        .price-banner {
+        
+        /* PRICE BOX */
+        .price-box {
             text-align: center;
-            padding: 25px;
-            background: rgba(184, 134, 11, 0.9);
+            background: #d4af37;
             color: white;
-            margin: 0 auto;
-            max-width: 500px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 400px;
         }
-
-        .price-banner h3 {
-            font-size: 18px;
-            font-weight: 400;
-            letter-spacing: 3px;
-        }
-
-        .price-banner p {
-            font-size: 13px;
-            opacity: 0.9;
-            margin-top: 5px;
-        }
-
+        
         /* SECTIONS */
         section {
-            padding: 100px 30px;
-            max-width: 1400px;
+            padding: 60px 20px;
+            max-width: 1200px;
             margin: 0 auto;
         }
-
-        .section-title {
+        
+        h2 {
             text-align: center;
-            font-size: 42px;
-            font-weight: 300;
-            letter-spacing: 8px;
-            margin-bottom: 60px;
             color: white;
-            text-transform: uppercase;
+            font-size: 36px;
+            margin-bottom: 40px;
+            letter-spacing: 5px;
         }
-
-        /* PRODUCT GRID */
-        .product-grid {
+        
+        .products {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
+            gap: 30px;
         }
-
-        .product-card {
+        
+        .product {
             background: white;
-            border-radius: 4px;
+            border-radius: 10px;
             overflow: hidden;
-            transition: 0.4s;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
-
-        .product-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-        }
-
-        .product-image {
+        
+        .product-img {
             width: 100%;
-            height: 300px;
-            background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .product-image img {
-            width: 100%;
-            height: 100%;
+            height: 280px;
             object-fit: cover;
         }
-
-        .product-image .placeholder-text {
-            font-size: 14px;
-            color: #999;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
+        
         .product-info {
-            padding: 30px;
+            padding: 25px;
             text-align: center;
         }
-
+        
         .product-name {
             font-size: 18px;
-            font-weight: 500;
             margin-bottom: 10px;
-            letter-spacing: 1px;
+            font-weight: bold;
         }
-
+        
         .product-price {
-            font-size: 22px;
-            color: #b8860b;
-            font-weight: 600;
-            margin-bottom: 8px;
+            font-size: 24px;
+            color: #d4af37;
+            font-weight: bold;
+            margin-bottom: 10px;
         }
-
-        .product-tag {
+        
+        .product-type {
             font-size: 12px;
-            color: #888;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 20px;
+            color: #666;
+            margin-bottom: 15px;
         }
-
-        /* ORDER BUTTONS */
-        .order-buttons {
-            display: flex;
-            gap: 12px;
-            justify-content: center;
-        }
-
-        .order-btn {
-            padding: 14px 30px;
+        
+        .btn-insta {
+            background: linear-gradient(45deg, #f09433, #dc2743, #bc1888);
+            color: white;
+            padding: 12px 25px;
             border: none;
-            border-radius: 2px;
-            cursor: pointer;
-            font-size: 12px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: 0.3s;
+            border-radius: 25px;
             text-decoration: none;
+            margin: 5px;
             display: inline-block;
         }
-
-        .instagram-btn {
-            background: linear-gradient(45deg, #833AB4, #FD1D1D, #F77737);
-            color: white;
-        }
-
-        .whatsapp-btn {
+        
+        .btn-wa {
             background: #25D366;
             color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            margin: 5px;
+            display: inline-block;
         }
-
-        .order-btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-        }
-
-        /* FOOTER */
+        
         footer {
             background: #1a1a1a;
             color: white;
-            padding: 80px 30px;
             text-align: center;
-        }
-
-        .footer-logo {
-            font-size: 36px;
-            font-weight: 100;
-            letter-spacing: 8px;
-            margin-bottom: 30px;
-        }
-
-        .contact-info {
-            font-size: 14px;
-            line-height: 2.5;
-            letter-spacing: 1px;
-        }
-
-        .contact-info a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .footer-bottom {
-            margin-top: 40px;
-            padding-top: 30px;
-            border-top: 1px solid #333;
-            font-size: 12px;
-            opacity: 0.5;
-        }
-
-        @media (max-width: 768px) {
-            .logo { font-size: 36px; letter-spacing: 6px; }
-            .section-title { font-size: 28px; }
-            nav ul { gap: 20px; }
-            .product-grid { grid-template-columns: 1fr; }
+            padding: 40px;
         }
     </style>
 </head>
 <body>
     <!-- VIDEO BACKGROUND -->
-    <div class="video-container">
-        <video autoplay muted loop playsinline>
-            <source src="https://player.vimeo.com/external/434045526.sd.mp4?s=c27eecc69a27dbc4ff2b87d38afc35f1a9e7c02d&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
-        </video>
-    </div>
-    <div class="video-overlay"></div>
-
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="https://cdn.pixabay.com/vimeo/328940142/sparkles-22264.mp4?width=1280&height=720&hash=4e2e1f0b8c4c8c8c8c8c8c8c8c8c8" type="video/mp4">
+    </video>
+    
     <!-- HEADER -->
     <header>
-        <h1 class="logo">LIORE JEWELS</h1>
+        <h1 class="brand-name">LIORE JEWELS</h1>
         <p class="tagline">Premium Anti-Tarnish Plated Jewelry</p>
     </header>
-
+    
     <!-- NAVIGATION -->
     <nav>
-        <ul>
-            <li><a href="#necklaces">Necklaces</a></li>
-            <li><a href="#rings">Rings</a></li>
-            <li><a href="#earrings">Earrings</a></li>
-            <li><a href="#bracelets">Bracelets</a></li>
-        </ul>
+        <a href="#necklaces">NECKLACES</a>
+        <a href="#rings">RINGS</a>
+        <a href="#earrings">EARRINGS</a>
+        <a href="#bracelets">BRACELETS</a>
     </nav>
-
-    <!-- PRICE BANNER -->
-    <div class="price-banner">
-        <h3>&#8377;150 - &#8377;500</h3>
+    
+    <!-- PRICE BOX -->
+    <div class="price-box">
+        <h3>₹150 - ₹500</h3>
         <p>Anti-Tarnish Plated Jewelry</p>
     </div>
-
-    <!-- NECKLACES SECTION -->
+    
+    <!-- NECKLACES -->
     <section id="necklaces">
-        <h2 class="section-title">Necklaces</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="placeholder-text">Your Photo Here</span>
-                </div>
+        <h2>NECKLACES</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400" alt="Gold Necklace" class="product-img">
                 <div class="product-info">
                     <div class="product-name">Gold Plated Necklace</div>
-                    <div class="product-price">&#8377;299</div>
-                    <div class="product-tag">Anti-Tarnish Plated</div>
-                    <div class="order-buttons">
-                        <a href="https://instagram.com/lioree.jewels" target="_blank" class="order-btn instagram-btn">Instagram</a>
-                        <a href="https://wa.me/919509569785" target="_blank" class="order-btn whatsapp-btn">WhatsApp</a>
-                    </div>
+                    <div class="product-price">₹299</div>
+                    <div class="product-type">Anti-Tarnish Plated</div>
+                    <a href="https://instagram.com/lioree.jewels" class="btn-insta" target="_blank">Instagram</a>
+                    <a href="https://wa.me/919509569785" class="btn-wa" target="_blank">WhatsApp</a>
                 </div>
             </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="placeholder-text">Your Photo Here</span>
-                </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=400" alt="Pendant Necklace" class="product-img">
                 <div class="product-info">
                     <div class="product-name">Pendant Necklace</div>
-                    <div class="product-price">&#8377;350</div>
-                    <div class="product-tag">Anti-Tarnish Plated</div>
-                    <div class="order-buttons">
-                        <a href="https://instagram.com/lioree.jewels" target="_blank" class="order-btn instagram-btn">Instagram</a>
-                        <a href="https://wa.me/919509569785" target="_blank" class="order-btn whatsapp-btn">WhatsApp</a>
-                    </div>
+                    <div class="product-price">₹350</div>
+                    <div class="product-type">Anti-Tarnish Plated</div>
+                    <a href="https://instagram.com/lioree.jewels" class="btn-insta" target="_blank">Instagram</a>
+                    <a href="https://wa.me/919509569785" class="btn-wa" target="_blank">WhatsApp</a>
                 </div>
             </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="placeholder-text">Your Photo Here</span>
-                </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400" alt="Chain Necklace" class="product-img">
                 <div class="product-info">
                     <div class="product-name">Chain Necklace</div>
-                    <div class="product-price">&#8377;250</div>
-                    <div class="product-tag">Anti-Tarnish Plated</div>
-                    <div class="order-buttons">
-                        <a href="https://instagram.com/lioree.jewels" target="_blank" class="order-btn instagram-btn">Instagram</a>
-                        <a href="https://wa.me/919509569785" target="_blank" class="order-btn whatsapp-btn">WhatsApp</a>
-                    </div>
+                    <div class="product-price">₹250</div>
+                    <div class="product-type">Anti-Tarnish Plated</div>
+                    <a href="https://instagram.com/lioree.jewels" class="btn-insta" target="_blank">Instagram</a>
+                    <a href="https://wa.me/919509569785" class="btn-wa" target="_blank">WhatsApp</a>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- RINGS SECTION -->
+    
+    <!-- RINGS -->
     <section id="rings">
-        <h2 class="section-title">Rings</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="placeholder-text">Your Photo Here</span>
-                </div>
+        <h2>RINGS</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400" alt="Gold Ring" class="product-img">
                 <div class="product-info">
                     <div class="product-name">Gold Ring</div>
-                    <div class="product-price">&#8377;199</div>
-                    <div class="product-tag">Anti-Tarnish Plated</div>
-                    <div class="order-buttons">
-                        <a href="https://instagram.com/lioree.jewels" target="_blank" class="order-btn instagram-btn">Instagram</a>
-                        <a href="https://wa.me/919509569785" target="_blank" class="order-btn whatsapp-btn">WhatsApp</a>
-                    </div>
+                    <div class="product-price">₹199</div>
+                    <div class="product-type">Anti-Tarnish Plated</div>
+                    <a href="https://instagram.com/lioree.jewels" class="btn-insta" target="_blank">Instagram</a>
+                    <a href="https://wa.me/919509569785" class="btn-wa" target="_blank">WhatsApp</a>
                 </div>
             </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="placeholder-text">Your Photo Here</span>
-                </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=400" alt="Statement Ring" class="product-img">
                 <div class="product-info">
                     <div class="product-name">Statement Ring</div>
-                    <div class="product-price">&#8377;350</div>
-                    <div class="product-tag">Anti-Tarnish Plated</div>
-                    <div class="order-buttons">
-                        <a href="https://instagram.com/lioree.jewels" target="_blank" class="order-btn instagram-btn">Instagram</a>
-                        <a href="https://wa.me/919509569785" target="_blank" class="order-btn whatsapp-btn">WhatsApp</a>
-                    </div>
+                    <div class="product-price">₹350</div>
+                    <div class="product-type">Anti-Tarnish Plated</div>
+                    <a href="https://instagram.com/lioree.jewels" class="btn-insta" target="_blank">Instagram</a>
+                    <a href="https://wa.me/919509569785" class="btn-wa" target="_blank">WhatsApp</a>
                 </div>
             </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="placeholder-text">Your Photo Here</span>
-                </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=400" alt="Cocktail Ring" class="product-img">
                 <div class="product-info">
                     <div class="product-name">Cocktail Ring</div>
-                    <div class="product-price">&#8377;400</div>
-                    <div class="product-tag">Anti-Tarnish Plated</div>
-                    <div class="order-buttons">
-                        <a href="https://instagram.com/lioree.jewels" target="_blank" class="order-btn instagram-btn">Instagram</a>
-                        <a href="https://wa.me/919509569785" target="_blank" class="order-btn whatsapp-btn">WhatsApp</a>
-                    </div>
+                    <div class="product-price">₹400</div>
+                    <div class="product-type">Anti-Tarnish Plated</div>
+                    <a href="https://instagram.com/lioree.jewels" class="btn-insta" target="_blank">Instagram</a>
+                    <a href="https://wa.me/919509569785" class="btn-wa" target="_blank">WhatsApp</a>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- EARRINGS SECTION -->
+    
+    <!-- EARRINGS -->
     <section id="earrings">
-        <h2 class="section-title">Earrings</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="placeholder-text">Your Photo Here</span>
-                </div>
+        <h2>EARRINGS</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400" alt="Stud Earrings" class="product-img">
                 <div class="product-info">
                     <div class="product-name">Stud Earrings</div>
-                    <div class="product-price">&#8377;150</div>
-                    <div class="product-tag">Anti-Tarnish Plated</div>
-                    <div class="order-buttons">
-                        <a href="https://instagram.com/lioree.jewels" target="_blank" class="order-btn instagram-btn">Instagram</a>
-                        <a href="https://wa.me/919509569785" target="_blank" class="order-btn whatsapp-btn">WhatsApp</a>
-                    </div>
+                    <div class="product-price">₹150</div>
+                    <div class="product-type">Anti-Tarnish Plated</div>
+                    <a href="https://instagram.com/lioree.jewels" class="btn-insta" target="_blank">Instagram</a>
+                    <a href="https://wa.me/919509569785" class="btn-wa" target="_blank">WhatsApp</a>
                 </div>
             </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="placeholder-text">Your Photo Here</span>
-                </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400" alt="Drop Earrings" class="product-img">
                 <div class="product-info">
                     <div class="product-name">Drop Earrings</div>
-                    <div class="product-price">&#8377;299</div>
-                    <div class="product-tag">Anti-Tarnish Plated</div>
-                    <div class="order-buttons">
-                        <a href="https://instagram.com/lioree.jewels" target="_blank" class="order-btn instagram-btn">Instagram</a>
-                        <a href="https://wa.me/919509569785" target="_blank" class="order-btn whatsapp-btn">WhatsApp</a>
-                    </div>
+                    <div class="product-price">₹299</div>
+                    <div class="product-type">Anti-Tarnish Plated</div>
+                    <a href="https://instagram.com/lioree.jewels" class="btn-insta" target="_blank">Instagram</a>
+                    <a href="https://wa.me/919509569785" class="btn-wa" target="_blank">WhatsApp</a>
                 </div>
             </div>
-            <div
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1620750057416-3c1a31b43a7a?w=400" alt="Hoop Earrings" class="product-img">
+                <div class="product-info">
+                    <div class="product-name">Hoop Earrings</div>
+                    <div class="product-price">₹250</div>
+                    <div class="product-type">Anti-Tarnish Plated</div>
+                    <a href="https://instagram.com/lioree.jewels" class="btn-insta" target="_blank">Instagram</a>
+                    <a href="https://wa.me/919509569785" class="btn-wa" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- BRACELETS -->
+    <section id="bracelets">
+        <h2>BRACELETS</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400" alt="Bangle Bracelet" class="product-img">
+                <div class="product-info">
+                    <div class="product-name">Bangle Bracelet</div>
+                    <div class="product-price">₹299</div>
+                    <div class="product-type">Anti-Tarnish Plated</div>
+                    <a href="https://instagram.com/lioree.jewels" class="btn-insta" target="_blank">Instagram</a>
+                    <a href="https://wa.me/919509569785" class="btn-wa" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=400" alt="Chain Bracelet" class="product-img">
+                <div class="product-info">
+                    <div class="product-name">Chain Bracelet</div>
+                    <div class="product-price">₹350</div>
+                    <div class="product-type">Anti-Tarnish Plated</div>
+                    <a href="https://instagram.com/lioree.jewels" class="btn-insta" target="_blank">Instagram</a>
+                    <a href="https://wa.me/919509569785" class="btn-wa" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=400" alt="Cuff Bracelet" class="product-img">
+                <div class="product-info">
+                    <div class="product-name">Cuff Bracelet</div>
+                    <div class="product-price">₹500</div>
+                    <div class="product-type">Anti-Tarnish Plated</div>
+                    <a href="https://instagram.com/lioree.jewels" class="btn-insta" target="_blank">Instagram</a>
+                    <a href="https://wa.me/919509569785" class="btn-wa" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer>
+        <h2>LIORE JEWELS</h2>
+        <p>Instagram: @lioree.jewels</p>
+        <p>WhatsApp: +91 9509569785</p>
+        <p style="opacity: 0.5; margin-top: 20px;">Anti-Tarnish Plated Jewelry | ₹150 - ₹500</p>
+    </footer>
+</body>
+</html>
